@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MS AUTO</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="MS AUTO Logo" class="logo"/>
+    <h1>MS AUTO Service Request</h1>
+    <form id="service-form" action="https://formspree.io/f/mnqkyqvd" method="POST">
+      <label>Name / Nom:</label>
+      <input type="text" name="name" required />
+      <label>Phone / Téléphone:</label>
+      <input type="tel" name="phone" required />
+      <label>Email:</label>
+      <input type="email" name="email" required />
+      <label>VIN (Optional):</label>
+      <input type="text" name="vin" />
+      <label>License Plate / Plaque:</label>
+      <input type="text" name="plate" required />
+      <label>Year / Année:</label>
+      <input type="text" name="year" required />
+      <label>Make / Marque:</label>
+      <input type="text" name="make" required />
+      <label>Model / Modèle:</label>
+      <input type="text" name="model" required />
+      <label>Service Description / Description du service:</label>
+      <textarea name="description" required></textarea>
+      <input type="hidden" name="_subject" value="New MS AUTO Service Request">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Submit / Soumettre</button>
+    </form>
+    <p id="thanks-message" style="display:none;">Thank you! / Merci!</p>
+    <div class="directions">
+      <a href="https://www.google.com/maps/search/?api=1&query=1888+Crémazie+Est,+Montreal,+QC+H2E+2Z6"
+         target="_blank">📍 Get Directions / Obtenir l’itinéraire</a>
+    </div>
+  </div>
+</body>
+</html>
